@@ -5,30 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6dc43ed9-1437-4d5f-9609-fd01c9e1f232" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/backend/projects/test/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/projects/test/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/projects/test/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/projects/testFlask/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/projects/testFlask/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/projects/testFlask/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/projects/test_a/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/projects/test_a/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/projects/test_a/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/projects/test_project_flask/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/projects/test_project_flask/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/projects/test_project_flask/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/projects/test_project_flask_a/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/projects/test_project_flask_a/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/projects/test_project_flask_a/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/projects/test_project_flask_b/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/projects/test_project_flask_b/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/projects/test_project_flask_b/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/projects/test_project_flask_test/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/projects/test_project_flask_test/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/projects/test_project_flask_test/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/projects/xz/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/projects/xz/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/projects/xz/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/vite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/vite.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,21 +16,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "NickNameYouTuber"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;NickNameYouTuber&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/NickNameYouTuber/vibeserver.git",
-    "accountId": "03fe0b2c-52db-4f91-a788-374fa2fcc9c6"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/NickNameYouTuber/vibeserver.git&quot;,
+    &quot;accountId&quot;: &quot;03fe0b2c-52db-4f91-a788-374fa2fcc9c6&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2vKbFcI6eFEmoi2xjzIMtqAen0S" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -62,6 +40,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.codeium.enabled": "true",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/Nick/Documents/NIProjects/vibeserver",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -87,6 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1743896610110</updated>
       <workItem from="1743896610958" duration="2696000" />
+      <workItem from="1743980734391" duration="569000" />
     </task>
     <servers />
   </component>
