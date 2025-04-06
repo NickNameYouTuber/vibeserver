@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6dc43ed9-1437-4d5f-9609-fd01c9e1f232" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/backend/projects/test/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/projects/test/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/projects/test/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/projects/testFlask/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/projects/testFlask/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/projects/testFlask/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/projects/test_a/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/projects/test_a/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/projects/test_a/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/projects/test_project_flask/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/projects/test_project_flask/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/projects/test_project_flask/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/projects/test_project_flask_a/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/projects/test_project_flask_a/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/projects/test_project_flask_a/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/projects/test_project_flask_b/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/projects/test_project_flask_b/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/projects/test_project_flask_b/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/projects/test_project_flask_test/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/projects/test_project_flask_test/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/projects/test_project_flask_test/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/projects/xz/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/projects/xz/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/projects/xz/requirements.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "NickNameYouTuber"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/NickNameYouTuber/vibeserver.git",
+    "accountId": "03fe0b2c-52db-4f91-a788-374fa2fcc9c6"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2vKbFcI6eFEmoi2xjzIMtqAen0S" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.codeium.enabled": "true",
+    "last_opened_file_path": "C:/Users/Nick/Documents/NIProjects/vibeserver",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.24807.6" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6dc43ed9-1437-4d5f-9609-fd01c9e1f232" name="Changes" comment="" />
+      <created>1743896610110</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1743896610110</updated>
+      <workItem from="1743896610958" duration="2696000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
