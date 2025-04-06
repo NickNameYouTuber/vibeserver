@@ -4,10 +4,9 @@ import tempfile
 NGINX_CONF_PATH = "/etc/nginx/sites-available/vibeserver"
 
 def add_project_to_nginx(project_name, port):
-    # Базовый шаблон конфигурации сервера, если файл ещё не существует
     base_config = """server {
     listen 80;
-    server_name localhost 127.0.0.1;
+    server_name 192.168.1.99 127.0.0.1;
 
     location / {
         return 200 "Welcome to VibeServer!";
@@ -15,7 +14,6 @@ def add_project_to_nginx(project_name, port):
     }
 }
 """
-    # Конфигурация для нового проекта
     project_config = f"""    location /{project_name}/ {{
         proxy_pass http://127.0.0.1:{port}/;
         proxy_set_header Host $host;
@@ -25,7 +23,6 @@ def add_project_to_nginx(project_name, port):
     }}
 """
 
-    # Если файл ещё не существует, создаём его с помощью sudo
     if not os.path.exists(NGINX_CONF_PATH):
         with tempfile.NamedTemporaryFile(mode="w", delete=False) as temp_file:
             temp_file.write(base_config)
@@ -34,44 +31,60 @@ def add_project_to_nginx(project_name, port):
         os.system(f"sudo chown root:root {NGINX_CONF_PATH}")
         os.system(f"sudo chmod 644 {NGINX_CONF_PATH}")
 
-    # Читаем текущий файл (нужен sudo для доступа)
     temp_file_path = tempfile.mktemp()
     os.system(f"sudo cp {NGINX_CONF_PATH} {temp_file_path}")
-    
-    with open(temp_file_path, "r") as f:
-        content = f.read()
 
-    # Проверяем, есть ли уже такой location
-    if f"location /{project_name}/" not in content:
-        # Вставляем новый блок перед последней закрывающей скобкой
-        new_content = content.rstrip("}\n") + project_config + "}\n"
-        with open(temp_file_path, "w") as f:
-            f.write(new_content)
-        
-        # Копируем обратно с sudo и перезагружаем Nginx
-        os.system(f"sudo mv {temp_file_path} {NGINX_CONF_PATH}")
-        os.system("sudo nginx -t && sudo nginx -s reload")
-    else:
-        os.remove(temp_file_path)  # Удаляем временный файл, если ничего не изменилось
-        
-def remove_project_from_nginx(project_name):
-    # Используем список строк и игнорируем блоки для данного проекта
-    with open(NGINX_CONF_PATH, "r") as f:
+    with open(temp_file_path, "r") as f:
         lines = f.readlines()
-    
+
+    if any(f"location /{project_name}/" in line for line in lines):
+        os.remove(temp_file_path)
+        return
+
+    new_lines = []
+    inserted = False
+    for i, line in enumerate(lines):
+        if "}" in line.strip() and i == len(lines) - 1:
+            new_lines.append(project_config)
+            new_lines.append(line)
+            inserted = True
+        else:
+            new_lines.append(line)
+
+    if not inserted:
+        new_lines.append(project_config)
+
+    with open(temp_file_path, "w") as f:
+        f.writelines(new_lines)
+
+    os.system(f"sudo mv {temp_file_path} {NGINX_CONF_PATH}")
+    os.system("sudo nginx -t && sudo nginx -s reload")
+
+def remove_project_from_nginx(project_name):
+    temp_file_path = tempfile.mktemp()
+    os.system(f"sudo cp {NGINX_CONF_PATH} {temp_file_path}")
+
+    with open(temp_file_path, "r") as f:
+        lines = f.readlines()
+
     new_lines = []
     skip = False
+    brace_count = 0
+
     for line in lines:
-        # Если строка содержит начало блока для нужного проекта – начинаем пропускать
         if f"location /{project_name}/" in line:
             skip = True
-        # Если встречаем закрывающую скобку и находимся в режиме пропуска – завершаем пропуск
-        elif skip and "}" in line:
-            skip = False
+            brace_count = line.count("{") - line.count("}")
             continue
-        if not skip:
-            new_lines.append(line)
-    
-    with open(NGINX_CONF_PATH, "w") as f:
+        if skip:
+            brace_count += line.count("{") - line.count("}")
+            if brace_count <= 0:
+                skip = False
+            continue
+        new_lines.append(line)
+
+    with open(temp_file_path, "w") as f:
         f.writelines(new_lines)
-    os.system("sudo nginx -s reload")
+
+    os.system(f"sudo mv {temp_file_path} {NGINX_CONF_PATH}")
+    os.system("sudo nginx -t && sudo nginx -s reload")

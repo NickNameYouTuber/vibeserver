@@ -1,0 +1,12 @@
+{
+    "name": "Flask Python",
+    "type": "flask",
+    "settings_schema": {
+        "port": {"type": "integer", "default": 5000},
+        "debug": {"type": "boolean", "default": true}
+    },
+    "files": {
+        "app.py": "from flask import Flask\napp = Flask(__name__)\n\n@app.route('/')\ndef hello():\n    return 'Hello, World!'\n\nif __name__ == '__main__':\n    app.run(debug={{ debug }}, port={{ port }})",
+        "Dockerfile": "FROM python:3.9-slim\nWORKDIR /app\nCOPY . /app\nRUN pip install flask\nEXPOSE 6000\nCMD [\"python\", \"app.py\"]"
+    }
+}
